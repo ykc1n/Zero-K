@@ -31,6 +31,13 @@ options = {
 		desc = "If enabled, rightclicking an enemy will give the Set Target command.\nIf disabled, the command is Attack.",
 		noHotkey = true,
 	},
+	set_target_hold_fire = {
+		name ="Hold fire when a target is set",
+		type = "bool",
+		value =false,
+		desc = "If enabled, giving a Set Target command will automatically change the unit's firestate to Hold fire. If set target is not active, the unit will return to it's previous firestate\n If disabled, giving a Set Target command will not change the firestate at all",
+		noHotkey = true,
+	}
 }
 
 local cons, facs = {}, {}
